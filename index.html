@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validação de Formulários</title>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <form action="https://dffefe.sdjs" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="email">Digite seu Email</label>
+            <input name="login" type="email">
+        </div>
+        <div>
+            <label for="email">Digite seu Email</label>
+            <input name="confirm" type="email">
+        </div>
+        <div>
+            <label for="senha">Confirme sua senha</label>
+            <input name="password" type="senha">
+        </div>
+        <div>
+            <label for="cpf">Informe seu CPF</label>
+            <input name="cpf" type="cpf" maxlength="14">
+        </div>
+        <div>
+            <label for="plano">Escolha seu plano</label>
+            <input type="radio" value="b" name="plano">Básico<label for=""></label>
+            <input type="radio" value="i" name="plano">Intermediário <label for=""></label>
+            <input type="radio" value="v" name="plano">VIP <label for=""></label>
+        </div>
+        <div>
+            <label for="foto">Escolha uma Foto</label>
+            <input type="file" name="foto" accept="image/*">
+        </div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+
+</html>
